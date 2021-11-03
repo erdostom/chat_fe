@@ -45,7 +45,7 @@ function App() {
           className="text-center my-2 text-xl"
         >Welcome {name}</h2>
         <div
-          className="md:flex-row sm:flex-col flex justify-around"
+          className="md:flex-row flex-col flex justify-around"
         >
           <Messages messages={storedMsgs} />
           <Attendees messages={storedMsgs} />
@@ -87,7 +87,7 @@ const Attendees = ({messages}) => {
   const uniqueNames = _.uniq(names)
   return <div
     
-    className="pl-2 bg-blue-100 w-1/3 py-2 rounded sm:my-8 md:my-0"
+    className="pl-2 bg-blue-100 w-1/3 py-2 rounded my-8 md:my-0"
   >
     <h3
       className="text-lg font-semibold"
